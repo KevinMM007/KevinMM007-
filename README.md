@@ -88,22 +88,29 @@ Software Engineer focused on **Python backend (FastAPI)**, **Machine Learning in
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h3>🌫️ Sistema de Monitoreo Atmosférico</h3>
-      <p><b>v2.1</b> · Plataforma full-stack para monitorear, predecir y alertar sobre la calidad del aire en Xalapa.</p>
-      <ul>
-        <li>API REST con <b>30+ endpoints</b> en FastAPI</li>
-        <li><b>5 modelos ML</b> (scikit-learn) para predicción de contaminantes</li>
-        <li>Sistema de <b>alertas por email</b> con suscripción/desuscripción</li>
-        <li>Análisis geoespacial con <b>OpenStreetMap</b> (Overpass API)</li>
-        <li>Deploy en <b>Render</b> con Gunicorn + Uvicorn</li>
-        <li>Tests con <b>Pytest</b> · Rate limiting · CORS configurable</li>
-      </ul>
-      <p>
-        <code>Python</code> <code>FastAPI</code> <code>scikit-learn</code><br>
-        <code>PostgreSQL</code> <code>React</code> <code>Leaflet</code> <code>Render</code>
-      </p>
-      <a href="https://github.com/KevinMM007/Sistema-de-Monitoreo-Atmosferico"><b>→ Ver repo</b></a>
-    </td>
+  <h3>🌫️ Sistema de Monitoreo Atmosférico</h3>
+  <p>
+    <a href="https://calidad-aire-xalapa.vercel.app" target="_blank">
+      <img src="https://img.shields.io/badge/🌐_Demo_en_vivo-Visitar-success?style=for-the-badge" alt="Demo en vivo"/>
+    </a>
+  </p>
+  <p><b>v2.1</b> · Plataforma full-stack para monitorear, predecir y alertar sobre la calidad del aire en Xalapa.</p>
+  <ul>
+    <li>API REST con <b>30+ endpoints</b> en FastAPI</li>
+    <li><b>5 modelos ML</b> (scikit-learn) para predicción de contaminantes</li>
+    <li>Sistema de <b>alertas por email</b> con suscripción/desuscripción</li>
+    <li>Análisis geoespacial con <b>OpenStreetMap</b> (Overpass API)</li>
+    <li>Deploy en <b>Render</b> con Gunicorn + Uvicorn</li>
+    <li>Tests con <b>Pytest</b> · Rate limiting · CORS configurable</li>
+  </ul>
+  <p>
+    <code>Python</code> <code>FastAPI</code> <code>scikit-learn</code><br>
+    <code>PostgreSQL</code> <code>React</code> <code>Leaflet</code> <code>Render</code>
+  </p>
+  <p>
+    <a href="https://github.com/KevinMM007/Sistema-de-Monitoreo-Atmosferico"><b>→ Ver repo</b></a>
+  </p>
+</td>
     <td width="50%" valign="top">
       <h3>🍍 PiñaApp</h3>
       <p><b>v1.3</b> · Marketplace móvil que conecta productores, compradores y transportistas de piña.</p>
