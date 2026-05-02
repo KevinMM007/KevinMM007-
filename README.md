@@ -126,12 +126,11 @@ Software Engineer focused on **Python backend (FastAPI)**, **Machine Learning in
 
 ---
 
-### 📊 GitHub Stats
+### 🚀 En lo que estoy trabajando ahora
 
-<p align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=KevinMM007&show_icons=true&theme=tokyonight&hide_border=true&count_private=true"/>
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=KevinMM007&layout=compact&theme=tokyonight&hide_border=true&langs_count=8"/>
-</p>
+- 🔭 Mejorando el deploy y los modelos ML 
+- 🌱 Aprendiendo más sobre **AWS** (EC2, ECS, Lambda)
+- 💬 Disponible para colaborar en proyectos backend, full-stack, etc
 
 ---
 
