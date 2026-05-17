@@ -37,6 +37,13 @@ Software Engineer focused on **Python backend (FastAPI)**, **AI/LLM integration*
 
 > 🚀 **Open to remote opportunities across LATAM** as Backend / Python / DevOps / Cloud / Full-Stack Engineer.
 
+### 🎯 Lo que hago mejor
+
+- **Desarrollo Backend:** Construcción de APIs REST robustas con FastAPI, SQLAlchemy, Alembic y altas coberturas de pruebas automatizadas (Pytest).
+- **Integración de IA:** Implementación de arquitecturas RAG, embeddings, modelos LLM (Gemini) y búsqueda vectorial (pgvector) en entornos de producción.
+- **Cloud & DevOps:** Implementación de CI/CD (GitHub Actions), Dockerización y despliegues de infraestructura como código (Terraform) en AWS para entornos reproducibles y seguros.
+- **Visión de Producto:** Diseño de sistemas con enfoque en la mantenibilidad, optimización de costos en la nube y resolución de problemas reales de extremo a extremo.
+
 ---
 
 ### 🛠️ Stack & Herramientas
