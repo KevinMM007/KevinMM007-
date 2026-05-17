@@ -1,5 +1,5 @@
 <h1 align="center">¡Hola! Soy Kevin Morales 👋</h1>
-<h3 align="center">Ingeniero en Sistemas Computacionales · Backend Python · DevOps / Cloud / IaC</h3>
+<h3 align="center">Ingeniero en Sistemas Computacionales · Backend Python · AI / RAG · DevOps / Cloud / IaC</h3>
 
 <p align="center">
   <a href="https://www.linkedin.com/in/kevin-morales-625604173/">
@@ -17,12 +17,13 @@
 ### 🇲🇽 Sobre mí
 
 Ingeniero en Sistemas Computacionales con especialidad en **Ingeniería de Software**.
-Construyo **APIs y servicios backend en Python (FastAPI)**, integro **modelos de Machine Learning** en producción y empaco lo que construyo con buenas prácticas de **DevOps / Cloud / IaC** (Docker, CI/CD, Render, **AWS, Terraform**) para que llegue a producción de forma confiable.
+Construyo **APIs y servicios backend en Python (FastAPI)**, integro **modelos de Machine Learning e IA generativa** en producción y empaco lo que construyo con buenas prácticas de **DevOps / Cloud / IaC** (Docker, CI/CD, Render, **AWS, Terraform**) para que llegue a producción de forma confiable.
 
 He desarrollado sistemas reales de extremo a extremo:
 
 - ☁️ Una **infraestructura AWS completa en Terraform** (~35 recursos: VPC, RDS, Lambda, API Gateway, ECR, IAM, Secrets Manager) que despliega la API del Expense Tracker en AWS con **CI/CD por OIDC** — cero AWS keys de larga vida en GitHub secrets.
-- 💸 Una **REST API en producción** (Expense Tracker) con FastAPI, JWT auth hand-rolled, Postgres + Alembic, **27 tests al 95% coverage**, Dockerfile multi-stage, **GitHub Actions CI/CD** y deploy en Render — **misma app corriendo además en AWS Lambda** vía Mangum.
+- 💸 Una **REST API en producción** (Expense Tracker) con FastAPI, JWT auth hand-rolled, Postgres + Alembic, **31 tests al 95% coverage**, Dockerfile multi-stage, **GitHub Actions CI/CD** y deploy en Render — **misma app corriendo además en AWS Lambda** vía Mangum.
+- 🤖 Una **API RAG con streaming en tiempo real**: upload de PDFs/Markdown, embeddings con Google Gemini (pgvector + HNSW), respuestas con citas inline streameadas token a token vía SSE — **72 tests al 96% coverage**, deploy en Render + Neon, $0/mes.
 - 🌫️ Una **plataforma de monitoreo de calidad del aire** para Xalapa con 30+ endpoints REST, modelos ML para 5 contaminantes, sistema de alertas por email, integración con OpenStreetMap y deploy en Render.
 - 🍍 Un **marketplace móvil multiplataforma** (Android, iOS, Web, Windows, macOS, Linux) con 3 roles de usuario, chat en tiempo real, sistema de ofertas, geolocalización con mapas y backend en Firebase.
 
@@ -32,7 +33,7 @@ Estoy cómodo con todo el ciclo: diseño, desarrollo, despliegue y mantenimiento
 
 ### 🇺🇸 About me
 
-Software Engineer focused on **Python backend (FastAPI)**, **Machine Learning integration**, and **DevOps / Cloud / IaC** practices. I have shipped real production systems end-to-end — from a fully containerised REST API with JWT auth, Alembic migrations and a complete GitHub Actions CI/CD pipeline, to an **AWS deployment fully defined in Terraform** (Lambda + RDS + API Gateway + OIDC federation, no AWS keys in repo secrets), to a real-time air quality monitoring platform with ML predictions and email alerts, plus a cross-platform mobile marketplace with real-time chat. Comfortable across the whole lifecycle: design, build, test, deploy, maintain.
+Software Engineer focused on **Python backend (FastAPI)**, **AI/LLM integration**, **Machine Learning**, and **DevOps / Cloud / IaC** practices. I have shipped real production systems end-to-end — from a fully containerised REST API with JWT auth, Alembic migrations and a complete GitHub Actions CI/CD pipeline, to an **AWS deployment fully defined in Terraform** (Lambda + RDS + API Gateway + OIDC federation, no AWS keys in repo secrets), to a production **RAG backend** with pgvector HNSW search, Google Gemini embeddings and token-by-token SSE streaming (72 tests, 96% branch coverage), to a real-time air quality monitoring platform with ML predictions and email alerts, plus a cross-platform mobile marketplace with real-time chat. Comfortable across the whole lifecycle: design, build, test, deploy, maintain.
 
 > 🚀 **Open to remote opportunities across LATAM** as Backend / Python / DevOps / Cloud / Full-Stack Engineer.
 
@@ -50,6 +51,15 @@ Software Engineer focused on **Python backend (FastAPI)**, **Machine Learning in
   <img src="https://img.shields.io/badge/Pytest-0A9EDC?style=flat-square&logo=pytest&logoColor=white"/>
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black"/>
   <img src="https://img.shields.io/badge/Dart-0175C2?style=flat-square&logo=dart&logoColor=white"/>
+</p>
+
+**AI / LLM & Vector Search**
+<p>
+  <img src="https://img.shields.io/badge/Google_Gemini-4285F4?style=flat-square&logo=google&logoColor=white"/>
+  <img src="https://img.shields.io/badge/pgvector-336791?style=flat-square&logo=postgresql&logoColor=white"/>
+  <img src="https://img.shields.io/badge/RAG-Vector_Search-FF6B35?style=flat-square"/>
+  <img src="https://img.shields.io/badge/SSE_Streaming-009688?style=flat-square"/>
+  <img src="https://img.shields.io/badge/PyMuPDF-FF0000?style=flat-square"/>
 </p>
 
 **Machine Learning & Data**
@@ -170,25 +180,76 @@ Software Engineer focused on **Python backend (FastAPI)**, **Machine Learning in
 
 <table>
   <tr>
-    <td width="50%" valign="top">
-      <h3>🌫️ Sistema de Monitoreo Atmosférico</h3>
+    <td valign="top">
+      <h3>🤖 Docs RAG API <sub><sup>· Production-ready · RAG + Streaming + pgvector</sup></sub></h3>
+      <p>
+        <a href="https://docs-rag-api.onrender.com/docs" target="_blank">
+          <img src="https://img.shields.io/badge/📚_Swagger_docs-Probar_endpoints-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="API docs"/>
+        </a>
+      </p>
+      <p>
+        <a href="https://github.com/KevinMM007/docs-rag-api/actions/workflows/ci.yml">
+          <img src="https://github.com/KevinMM007/docs-rag-api/actions/workflows/ci.yml/badge.svg" alt="CI"/>
+        </a>
+        <img src="https://img.shields.io/badge/coverage-96%25-brightgreen?style=flat-square"/>
+        <img src="https://img.shields.io/badge/tests-72_passing-success?style=flat-square&logo=pytest"/>
+        <img src="https://img.shields.io/badge/license-MIT-blue?style=flat-square"/>
+      </p>
+      <p><b>Backend RAG (Retrieval-Augmented Generation) production-ready</b>: sube un PDF o Markdown, haz preguntas en lenguaje natural y recibe respuestas con citas inline streameadas token a token vía Server-Sent Events.</p>
+      <ul>
+        <li>🧮 <b>pgvector + HNSW index</b>: embeddings de 768 dimensiones con <code>gemini-embedding-001</code>, búsqueda coseno en milisegundos</li>
+        <li>✂️ <b>Chunking sentence-aware</b>: ventana deslizante con overlap, respeta límites de oración para embeddings más precisos</li>
+        <li>💬 <b>Streaming SSE</b>: eventos <code>sources</code> → <code>token</code> → <code>done</code>; el modelo cita el documento fuente o se niega a responder si el contexto es insuficiente</li>
+        <li>🔐 <b>JWT auth con aislamiento por usuario</b>: filtros a nivel SQL, no en application code</li>
+        <li>🧪 <b>72 tests · 96% branch coverage</b>: Postgres real vía testcontainers, Gemini SDK mockeado — CI nunca gasta quota</li>
+        <li>🐳 <b>Docker multi-stage</b>: ~520 MB, usuario no-root, healthcheck</li>
+        <li>💰 <b>$0/mes</b>: Google AI Studio free tier + Render free + Neon free Postgres</li>
+      </ul>
+      <p>
+        <code>Python 3.13</code> <code>FastAPI 0.115</code> <code>Google Gemini 2.5</code> <code>pgvector</code><br>
+        <code>PostgreSQL 16</code> <code>SQLAlchemy 2</code> <code>Alembic</code> <code>PyMuPDF</code><br>
+        <code>SSE Streaming</code> <code>JWT</code> <code>Docker</code> <code>GitHub Actions</code> <code>Render</code> <code>Neon</code>
+      </p>
+      <p>
+        <a href="https://github.com/KevinMM007/docs-rag-api"><b>→ Ver repo</b></a>
+        &nbsp;·&nbsp;
+        <a href="https://docs-rag-api.onrender.com/docs" target="_blank"><b>📚 Swagger docs</b></a>
+      </p>
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td valign="top">
+      <h3>🌫️ Sistema de Monitoreo Atmosférico <sub><sup>· Full-stack · ML + Geoespacial · Render + Vercel</sup></sub></h3>
       <p>
         <a href="https://calidad-aire-xalapa.vercel.app" target="_blank">
           <img src="https://img.shields.io/badge/🌐_Demo_en_vivo-Visitar-success?style=for-the-badge" alt="Demo en vivo"/>
         </a>
       </p>
-      <p><b>v2.1</b> · Plataforma full-stack para monitorear, predecir y alertar sobre la calidad del aire en Xalapa.</p>
+      <p>
+        <img src="https://img.shields.io/badge/FastAPI_0.115-009688?style=flat-square&logo=fastapi&logoColor=white"/>
+        <img src="https://img.shields.io/badge/React_18_+_Vite_6-61DAFB?style=flat-square&logo=react&logoColor=black"/>
+        <img src="https://img.shields.io/badge/ML-5_modelos_scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white"/>
+        <img src="https://img.shields.io/badge/deploy-Render_%2B_Vercel-46E3B7?style=flat-square"/>
+        <img src="https://img.shields.io/badge/version-2.1.0-blue?style=flat-square"/>
+        <img src="https://img.shields.io/badge/license-MIT-blue?style=flat-square"/>
+      </p>
+      <p><b>Plataforma full-stack</b> para monitoreo, predicción y alertamiento de la calidad del aire en Xalapa, Veracruz. Combina datos de 3 APIs externas, 5 modelos ML en producción, alertas por email y análisis geoespacial de 5 zonas de la ciudad.</p>
       <ul>
-        <li>API REST con <b>30+ endpoints</b> en FastAPI</li>
-        <li><b>5 modelos ML</b> (scikit-learn) para predicción de contaminantes</li>
-        <li>Sistema de <b>alertas por email</b> con suscripción/desuscripción</li>
-        <li>Análisis geoespacial con <b>OpenStreetMap</b> (Overpass API)</li>
-        <li>Deploy en <b>Render</b> con Gunicorn + Uvicorn</li>
-        <li>Tests con <b>Pytest</b> · Rate limiting · CORS configurable</li>
+        <li>🔌 <b>API REST con 30+ endpoints</b> organizados en 8 categorías: calidad del aire, predicciones ML, alertas, zonas geoespaciales, tráfico, comparaciones y diagnóstico — con Swagger UI y ReDoc integrados</li>
+        <li>🤖 <b>5 modelos ML (scikit-learn)</b> independientes para PM2.5, PM10, NO₂, O₃ y CO — features temporales + meteorológicas + factores por zona, reentrenables vía <code>POST /api/ml/train</code>, alineados con AQI EPA y NOM-025-SSA1-2021</li>
+        <li>🌍 <b>3 APIs externas integradas</b>: Open-Meteo CAMS (contaminantes), TomTom Traffic (tráfico en tiempo real) y OpenStreetMap Overpass (infraestructura vial con seed de ~20k features para 5 zonas)</li>
+        <li>📧 <b>Sistema completo de alertas por email</b>: suscripción/desuscripción con token de un clic, validador custom RFC 5321/5322 con bloqueo de dominios temporales, scheduler para reportes diarios automáticos, 6 niveles de alerta</li>
+        <li>🗺️ <b>Dashboard React interactivo</b>: mapa React-Leaflet con zonas codificadas por color, gráficas Recharts en tiempo real, comparador de periodos históricos, exportación a PDF — 6 custom hooks, 3 dashboards principales</li>
+        <li>🛡️ <b>Rate limiting en 3 niveles</b> (100/min, 30/min, 5/min) + CORS configurable + fallback automático a datos sintéticos si las APIs externas fallan</li>
+        <li>🧪 <b>Tests con Pytest</b> + pytest-asyncio + httpx: fixtures SQLite en memoria, módulos para salud, calidad del aire, suscripciones, validadores y predicciones</li>
+        <li>🚀 <b>Deploy</b>: backend en Render con Gunicorn + Uvicorn workers, frontend en Vercel</li>
       </ul>
       <p>
-        <code>Python</code> <code>FastAPI</code> <code>scikit-learn</code><br>
-        <code>PostgreSQL</code> <code>React</code> <code>Leaflet</code> <code>Render</code>
+        <code>Python 3.11</code> <code>FastAPI 0.115</code> <code>SQLAlchemy 2</code> <code>PostgreSQL</code> <code>scikit-learn</code> <code>joblib</code> <code>pandas</code> <code>numpy</code> <code>aiohttp</code><br>
+        <code>React 18</code> <code>Vite 6</code> <code>Tailwind CSS 3</code> <code>React-Leaflet</code> <code>Recharts</code> <code>Headless UI</code> <code>html2pdf</code> <code>Render</code> <code>Vercel</code>
       </p>
       <p>
         <a href="https://github.com/KevinMM007/Sistema-de-Monitoreo-Atmosferico"><b>→ Ver repo</b></a>
@@ -196,22 +257,40 @@ Software Engineer focused on **Python backend (FastAPI)**, **Machine Learning in
         <a href="https://calidad-aire-xalapa.vercel.app" target="_blank"><b>🌐 Ver demo</b></a>
       </p>
     </td>
-    <td width="50%" valign="top">
-      <h3>🍍 PiñaApp</h3>
-      <p><b>v1.3</b> · Marketplace móvil que conecta productores, compradores y transportistas de piña.</p>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td valign="top">
+      <h3>🍍 PiñaApp <sub><sup>· Multiplataforma · Flutter + Firebase · 6 plataformas</sup></sub></h3>
+      <p>
+        <img src="https://img.shields.io/badge/Flutter_3.10+-02569B?style=flat-square&logo=flutter&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Dart_3.0+-0175C2?style=flat-square&logo=dart&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black"/>
+        <img src="https://img.shields.io/badge/platforms-Android_%7C_iOS_%7C_Web_%7C_Win_%7C_Mac_%7C_Linux-blue?style=flat-square"/>
+        <img src="https://img.shields.io/badge/version-1.3-blue?style=flat-square"/>
+        <img src="https://img.shields.io/badge/license-MIT-blue?style=flat-square"/>
+      </p>
+      <p><b>Marketplace móvil multiplataforma</b> que conecta productores, compradores y transportistas de piña, eliminando intermediarios y promoviendo el comercio justo. 83 archivos Dart · ~26,500 líneas · 15 modelos · 9 services · ~30 screens.</p>
       <ul>
-        <li><b>6 plataformas</b>: Android · iOS · Web · Windows · macOS · Linux</li>
-        <li><b>3 roles</b> de usuario con perfiles diferenciados</li>
-        <li><b>Chat 1:1</b> en tiempo real (Firestore streams)</li>
-        <li>Sistema de <b>ofertas</b> con notificaciones</li>
-        <li>Geolocalización con <b>flutter_map</b> (OpenStreetMap)</li>
-        <li>Auth + Storage + reglas de seguridad en Firebase</li>
+        <li>👥 <b>3 roles de usuario diferenciados</b>: Productor (publica lotes con fotos, variedad, calidad, precio y ubicación), Comprador (explora, filtra, oferta, publica necesidades), Transportista (ofrece servicios de logística) — con perfiles y campos específicos por rol</li>
+        <li>💬 <b>Chat 1:1 en tiempo real</b> (Firestore streams): lista de conversaciones con preview, vinculadas opcionalmente a un producto específico</li>
+        <li>💰 <b>Sistema de ofertas completo</b>: compradores envían ofertas con precio + cantidad + mensaje; el productor puede aceptar, rechazar o contraofertar — estados: <code>pendiente → aceptada / rechazada / contraoferta</code></li>
+        <li>⭐ <b>Sistema de calificaciones</b> entre usuarios post-transacción con promedio visible en cada perfil y contador de transacciones completadas</li>
+        <li>🗺️ <b>Geolocalización con mapas</b>: flutter_map (OpenStreetMap) + geolocator + geocoding inverso — selector de ubicación integrado en el flujo de publicación</li>
+        <li>🛍️ <b>Marketplace completo</b>: filtros avanzados (variedad, calidad, ubicación, precio), favoritos persistentes, galería de fotos múltiples por producto, listado de necesidades de compra</li>
+        <li>🔐 <b>Seguridad de datos</b>: reglas de Firestore y Storage incluidas en el repo — solo el dueño puede modificar su producto, fotos con límite de 5 MB, verificación de email obligatoria al registro</li>
+        <li>🎨 <b>UI/UX multiplataforma</b>: theme propio con paleta inspirada en la piña (verdes + dorados), splash screen nativo y app icons generados para las 6 plataformas, diseño responsive para tablet y desktop</li>
       </ul>
       <p>
-        <code>Flutter</code> <code>Dart</code> <code>Firebase</code><br>
-        <code>Provider</code> <code>flutter_map</code> <code>Firestore</code>
+        <code>Flutter 3.10+</code> <code>Dart 3.0+</code> <code>Firebase Auth</code> <code>Cloud Firestore</code> <code>Firebase Storage</code><br>
+        <code>Provider 6</code> <code>flutter_map 6</code> <code>geolocator 11</code> <code>geocoding 3</code> <code>image_picker</code> <code>shared_preferences</code><br>
+        <code>flutter_launcher_icons</code> <code>flutter_native_splash</code> <code>Android · iOS · Web · Windows · macOS · Linux</code>
       </p>
-      <a href="https://github.com/KevinMM007/PinaApp"><b>→ Ver repo</b></a>
+      <p>
+        <a href="https://github.com/KevinMM007/PinaApp"><b>→ Ver repo</b></a>
+      </p>
     </td>
   </tr>
 </table>
@@ -220,9 +299,8 @@ Software Engineer focused on **Python backend (FastAPI)**, **Machine Learning in
 
 ### 🚀 En lo que estoy trabajando ahora
 
-- ✅ **Recién completado:** infraestructura AWS en Terraform con OIDC CI/CD (Lambda + RDS + API Gateway, ~35 recursos)
-- 🔭 **Próximo:** integración de **LLMs** (OpenAI / Claude) en un backend Python — proyecto de **RAG / document analyzer** sobre FastAPI con pgvector
-- 🌱 **Aprendiendo:** observabilidad en producción (CloudWatch metrics avanzadas, structured logging, distributed tracing)
+- 🔭 **Próximo:** observabilidad en producción (CloudWatch metrics avanzadas, structured logging, distributed tracing)
+- 🌱 **Aprendiendo:** LLM agents y function calling con herramientas externas
 - 💬 **Disponible** para colaborar en proyectos backend, cloud o full-stack
 
 ---
